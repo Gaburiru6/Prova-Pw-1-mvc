@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Dashboard</title>
 </head>
 <body>
-$END$
+<h1>Bem-vindo ao Dashboard!</h1>
+<p>Usuário logado: <span th:text="${session.usuarioLogado}"></span></p>
+<a href="/cadastro">Sair</a> <!-- Simplesmente redireciona -->
 </body>
 </html>
